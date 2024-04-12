@@ -38,7 +38,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Training MNISTDiffusion")
     parser.add_argument('--lr',type = float ,default=0.001)
     parser.add_argument('--batch_size',type = int ,default=128)    
-    parser.add_argument('--epochs',type = int,default=100)
+    parser.add_argument('--epochs',type = int,default=1)
     parser.add_argument('--ckpt',type = str,help = 'define checkpoint path',default='')
     parser.add_argument('--n_samples',type = int,help = 'define sampling amounts after every epoch trained',default=36)
     parser.add_argument('--model_base_dim',type = int,help = 'base dim of Unet',default=64)
